@@ -1,0 +1,124 @@
+.main {
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    width: 1280px;
+    /* background: #EFD0F1; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px #883556;
+
+
+}
+
+.img {
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+li {
+    list-style: none;
+}
+
+.ul a {
+    list-style: none;
+    font-weight: 600;
+    color: #883556;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    /* Чтобы подчеркивание занимало только ширину текста */
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #883556;
+    /* Здесь можно указать цвет подчеркивания */
+    transform: scaleX(0);
+    /* Подчеркивание изначально невидимо */
+    transform-origin: left center;
+    /* Ось масштабирования слева */
+    transition: transform 0.3s ease;
+
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+    /* Подчеркивание появляется при наведении */
+}
+
+
+
+/* /////auth/// */
+.auth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.login {
+    width: 30px;
+    height: 30px;
+    padding-left: 40px;
+    margin-right: 15px;
+}
+
+.login:hover {
+    cursor: pointer;
+}
+
+.name {
+    cursor: pointer;
+    text-decoration: none;
+    /* display: none; */
+    color: #883556;
+    font-weight: 600;
+}

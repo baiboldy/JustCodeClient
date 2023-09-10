@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px #883556;
+    padding-bottom: 50px;
+}
+
+.h1 {
+    text-align: center;
+    margin-bottom: 50px;
+
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border: 1px solid #883556;
+    width: 350px;
+    padding: 35px;
+}
+
+.field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.label {
+    position: relative;
+
+    width: 50%;
+    vertical-align: middle;
+}
+
+.input {
+    height: 25px;
+    width: 50%;
+    /* убрать обводку */
+    outline: none;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+
+}
+
+.btn_delete {
+    border: 1px solid #ccc;
+}
+
+.btn_update {
+    border: 1px solid #ccc;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 15px 10px;
+    width: 70%;
+    align-self: center;
+    cursor: pointer;
+    background-color: #883556;
+    color: white;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+.button:hover {
+    transition: 1.2s;
+    background-color: black;
+}

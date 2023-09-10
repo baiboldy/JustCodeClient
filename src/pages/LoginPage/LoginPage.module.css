@@ -1,0 +1,109 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lora:ital@1&family=Source+Sans+Pro&family=Ubuntu&display=swap'); */
+
+:root {
+    --focus_color: #883556;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px #883556;
+    /* background: #d18fab; */
+
+}
+
+.form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: #EFD0F1; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.label {
+    position: relative;
+    margin-bottom: 16px;
+
+}
+
+.input {
+    height: 40px;
+
+    /* убрать обводку */
+    outline: none;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: 1px solid #883556;
+
+}
+
+.input:focus,
+.label.filed .input {
+
+    border-color: var(--focus_color);
+
+}
+
+/* для того чтобы был цвет span как у input */
+.input:focus+.span,
+.label.filed .span {
+    cursor: default;
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+    color: var(--focus_color);
+    border-radius: 4px;
+    border: 1px solid #883556;
+}
+
+.span {
+    /* чтобы поместить внутрь input */
+    position: absolute;
+    top: 27%;
+    left: 14px;
+    font-weight: 300;
+    color: #555;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    padding: 0 4px;
+    cursor: text;
+    pointer-events: none;
+
+}
+
+
+.button {
+    /* выровнять один эдемент сетки grid */
+    justify-self: end;
+    background-color: var(--focus_color);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+    width: 160px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.button.disable {
+    pointer-events: none;
+    background-color: #999;
+}
